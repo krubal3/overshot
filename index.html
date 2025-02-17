@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Mosaic Crochet Charts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div>
+
+  <button id="btnExport" onclick="exportPat();">export</button>
+  <button id="btnImport" onclick="importPat();">import</button>
+  <textarea id="txtPat" rows="1"></textarea>
+
+  <button id="btnClear" onclick="clearPat();">clear</button>
+  <button id="btnUndo" onclick="undo();">undo</button>
+ 
+<br />
+<input type="file" />
+
+<button id="btnRead" onclick="readSts(0);">read</button>
+
+</div>
+
+<div id="divScroll">
+  <table id="chart"></table>
+</div>
+
+<canvas id="myCanvas" width="31" height="31"></canvas>
+<canvas id="myCanvasRev" width="31" height="31"></canvas>
+
+
+<img id="imgImport" style="display: none;"/>
+<canvas id="myCanvasImport" width="31" height="31" style="display: none;"></canvas>
+
+<br />
+<div id="divInstruct"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

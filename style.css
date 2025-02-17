@@ -1,0 +1,38 @@
+#chart {
+  border-collapse: collapse;
+  table-layout: fixed;
+  
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  z-index: 0;
+  width: 50px;
+  height: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+body {
+  font-family: arial;
+  font-size: 8pt;
+}
+
+#divHighlight {
+  position: absolute;
+  background: rgba(255,255,0,.5);
+  z-index: 99;
+  height: 10px;
+}
+
+#divScroll {
+  overflow: scroll;
+  width: 100%;
+}
+
+table
+{
+    table-layout: fixed;
+    width: 100%;
+}
